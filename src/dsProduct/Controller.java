@@ -72,4 +72,13 @@ public class Controller {
             alert.show();
         }
     }
+
+    public void delete(ActionEvent actionEvent) {
+        int selectID = lv.getSelectionModel().getSelectedIndex();
+        lv.getItems().remove(selectID);
+        txtName.clear();
+        txtPrice.clear();
+        txtQuan.clear();
+        txtMta.clear();
+    }
 }
